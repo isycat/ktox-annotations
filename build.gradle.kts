@@ -1,10 +1,10 @@
 plugins {
-    kotlin("jvm")
+    kotlin("jvm") version "2.1.21"
     `maven-publish`
 }
 
 group = "com.github.isycat"
-version = "0.0.1"
+version = "0.0.2"
 
 repositories {
     mavenCentral()
@@ -24,7 +24,7 @@ publishing {
             from(components["java"])
             groupId = "com.github.isycat"
             artifactId = "ktox-annotations"
-            version = "0.0.1"
+            version = "0.0.2"
         }
     }
 }
