@@ -19,8 +19,8 @@ repositories {
 
 ```kotlin
 dependencies {
-    implementation("com.github.isycat:ktox-annotations:0.0.3")
+    implementation("com.github.isycat:ktox-annotations:0.0.4")
 }
 ```
 
-Note: replace `0.0.3` with a specific version or a commit hash.
+Note: replace `0.0.4` with a specific version or a commit hash.

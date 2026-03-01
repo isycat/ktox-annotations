@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.github.isycat"
-version = "0.0.3"
+version = "0.0.4"
 
 repositories {
     mavenCentral()
@@ -24,7 +24,7 @@ publishing {
             from(components["java"])
             groupId = "com.github.isycat"
             artifactId = "ktox-annotations"
-            version = "0.0.3"
+            version = "0.0.4"
         }
     }
 }
