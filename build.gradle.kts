@@ -1,11 +1,24 @@
+group = "com.isycat"
+version = properties["version"] ?: "0.0.1"
+
 plugins {
     `java-library`
     kotlin("jvm") version "2.1.21"
-    `maven-publish`
-}
 
-group = "com.github.isycat"
-version = "0.0.6"
+    id("com.isycat.publishing")
+}
+mavenCentralPublishing {
+    artifactId = "ktox-annotations"
+    groupId = "com.isycat"
+    name = "ktox Annotations"
+    description = "Annotations for Kotlin-to-X transpilers"
+    url = "https://github.com/isycat/KotlinToLua"
+    developerId = "isycat"
+    license {
+        name = "Apache-2.0"
+        url = "https://github.com/isycat/KotlinToLua"
+    }
+}
 
 repositories {
     mavenCentral()
@@ -17,15 +30,4 @@ dependencies {
 
 kotlin {
     jvmToolchain(21)
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            from(components["java"])
-            groupId = "com.github.isycat"
-            artifactId = "ktox-annotations"
-            version = "0.0.6"
-        }
-    }
 }
