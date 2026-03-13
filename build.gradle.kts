@@ -5,7 +5,7 @@ plugins {
     `java-library`
     kotlin("jvm") version "2.1.21"
 
-    id("com.isycat.maven-central-publisher")
+    id("com.isycat.maven-central-publisher") version "1.0.0"
 }
 mavenCentralPublishing {
     artifactId = "ktox-annotations"
