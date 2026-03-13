@@ -3,7 +3,7 @@ version = properties["version"] ?: "0.0.1"
 
 plugins {
     `java-library`
-    kotlin("jvm") version "2.1.21"
+    kotlin("jvm") version "2.3.10"
 
     id("com.isycat.maven-central-publisher") version "1.0.0"
 }
