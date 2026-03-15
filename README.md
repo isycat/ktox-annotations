@@ -24,3 +24,4 @@ dependencies {
 ```
 
 Note: replace `0.0.6` with a specific version or a commit hash.
+
